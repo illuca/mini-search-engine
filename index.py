@@ -44,7 +44,6 @@ for doc_id in docIds:
         token_no = 0
         for line_no, line in enumerate(lines):
             processed_tokens = preprocess(line)
-            # TODO hyphen word
             for t in processed_tokens:
                 index[t].append((doc_id, line_no, token_no))
                 token_no = token_no + 1
